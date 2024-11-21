@@ -1,23 +1,25 @@
-Bitcoin Price Prediction with Sentiment Analysis
+# Bitcoin Price Prediction with Sentiment Analysis
 This project leverages historical market data and sentiment analysis of Bitcoin-related Wikipedia edits to predict Bitcoin's price (BTC). By combining time-series analysis with natural language processing (NLP), it examines how market trends and public sentiment influence cryptocurrency prices.
 
-Overview
+# Overview
 Key Components:
 Historical Market Data: Bitcoin price data is sourced from Yahoo Finance and used for price prediction.
 Sentiment Analysis: Wikipedia's Bitcoin page revision history is analyzed for user comment sentiment to incorporate public sentiment into the model.
 LSTM Model: A Long Short-Term Memory (LSTM) neural network forecasts future prices by capturing temporal dependencies.
 Data Visualization: The performance of the model is evaluated by comparing actual prices against predictions through visual plots.
-Dependencies
+
+# Dependencies
 Ensure the following Python libraries are installed to run the project:
 
-NumPy: For efficient array operations.
-Pandas: For data manipulation and analysis.
-Matplotlib: For visualizing data.
-Yahoo Finance (yfinance): To fetch historical Bitcoin price data.
-TensorFlow/Keras: To design and train the LSTM model.
-MWClient: For accessing Wikipedia's API.
-Transformers: For sentiment analysis using pre-trained models by Hugging Face.
-How It Works
+• NumPy: For efficient array operations.
+• Pandas: For data manipulation and analysis.
+• Matplotlib: For visualizing data.
+• Yahoo Finance (yfinance): To fetch historical Bitcoin price data.
+• TensorFlow/Keras: To design and train the LSTM model.
+• MWClient: For accessing Wikipedia's API.
+• Transformers: For sentiment analysis using pre-trained models by Hugging Face.
+
+# How It Works
 1. Data Collection
 Market Data: Historical Bitcoin price data in USD is retrieved using Yahoo Finance's API (yfinance).
 Sentiment Data: Wikipedia's API (mwclient) provides the Bitcoin page's revision history. Sentiment analysis is performed on user comments using Hugging Face's transformers library, categorizing sentiment as positive or negative and computing sentiment scores.
@@ -38,10 +40,11 @@ The model predicts Bitcoin prices over a given test range (e.g., January–April
 5. Visualization
 The project generates a plot comparing actual vs. predicted Bitcoin prices, providing insights into the model's performance.
 
-Results
+# Results
 The model predicts Bitcoin's future price, with predictions visualized alongside actual prices. Incorporating sentiment data into the feature set highlights the potential influence of public sentiment on cryptocurrency markets.
 
-How to Run the Project
+# How to Run the Project
+
 Clone the repository:
 bash
 Copy code
